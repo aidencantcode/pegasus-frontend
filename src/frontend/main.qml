@@ -25,7 +25,7 @@ Window {
     visible: true
     width: 1280
     height: 720
-    title: "Pegasus"
+    title: "SteamOS Gaming Mode"
     color: "#000"
 
     visibility: Internal.settings.fullscreen

@@ -20,7 +20,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    color: "#222"
+    color: "#000000"
     anchors.fill: parent
 
     property real progress: 0
@@ -29,11 +29,18 @@ Rectangle {
 
     Behavior on progress { NumberAnimation {} }
 
+    // SteamOS Background
+    Image {
+        id: background
+        source: "assets/background_steamOS.png"
+        anchors.fill: parent
+        fillMode: Image.PreserveAspectCrop
+    }
 
     Image {
         id: logo
         source: "assets/logo.png"
-        width: Math.min(parent.width, parent.height)
+        width: Math.min(parent.width * 0.4, parent.height * 0.4)
         fillMode: Image.PreserveAspectFit
         verticalAlignment: Image.AlignBottom
 
